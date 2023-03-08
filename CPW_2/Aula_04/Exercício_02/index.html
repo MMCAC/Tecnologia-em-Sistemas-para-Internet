@@ -12,20 +12,36 @@
     <header></header>
 
     <main>
-        <div id="color-display-rgba"></div>
+        <div id="rgba">
+            <div id="color-display-rgba"></div>
 
-        <div id="color-ranges-rgba">
-            <label for="red">RED</label>
-            <input type="range" name="red" id="red" value="0" min="0" max="255">
-            
-            <label for="green">GREEN</label>
-            <input type="range" name="green" id="green" value="0" min="0" max="255">
+            <div id="color-ranges-rgba">
+                <label for="red">RED</label>
+                <input type="range" name="red" id="red" value="0" min="0" max="255">
+                
+                <label for="green">GREEN</label>
+                <input type="range" name="green" id="green" value="0" min="0" max="255">
 
-            <label for="blue">BLUE</label>
-            <input type="range" name="blue" id="blue" value="0" min="0" max="255">
+                <label for="blue">BLUE</label>
+                <input type="range" name="blue" id="blue" value="0" min="0" max="255">
 
-            <label for="alpha">ALPHA</label>
-            <input type="range" name="alpha" id="alpha" value="1" min="0" max="1" step="0.1">
+                <label for="alpha">ALPHA</label>
+                <input type="range" name="alpha" id="alpha" value="1" min="0" max="1" step="0.1">
+            </div>
+        </div>
+        <div id="hsl">
+            <div id="color-display-hsl"></div>
+
+            <div id="color-ranges-hsl">
+                <label for="hue">HUE</label>
+                <input type="range" name="hue" id="hue" value="0" min="0" max="360">
+
+                <label for="saturation">SATURATION</label>
+                <input type="range" name="saturation" id="saturation" value="0" min="0" max="100">
+
+                <label for="lightness">LIGHTNESS</label>
+                <input type="range" name="lightness" id="lightness" value="0" min="0" max="100">
+            </div>
         </div>
         
     </main>
