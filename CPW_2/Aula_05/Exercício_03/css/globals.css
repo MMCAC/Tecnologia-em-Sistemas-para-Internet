@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    font-family: 'bold';
+    font-size: 25px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Cáculo de Velocidade Média</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    
+    <noscript>Habilita p JS</noscript>
+
+    <main>
+        <div id="form-area">
+            <form action="result.html" id="avg-speed-form" method="get"> <!--Requisição do tipo get: consultando a página que se encontra no action, os dados aparecem na URL
+            Requisição do tipo post: Alterar alguma coisa que se encontra no servidor, os parâmetros não aparecem-->
+                <label for="deltaS">Deslocamento em metros:</label>
+                <input type="number" name="deltaS" id="deltaS" required>
+
+                <label for="deltaT">Intervalo em segundos:</label>
+                <input type="number" name="deltaT" id="deltaT" required>
+
+                <input type="submit" value="Cacular" class="btn"> <!--Input:submit.btn-->
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
+
+<!--https://127.0.0.1:5500/result.html?deltaS=&deltaTT=
+
+    https://127.0.0.1:5500/result.html -> Endereço da página
+
+    deltaS=&deltaTT= -> Search Parameters (Params)
+                        Query Parameter (Params)
+
+    HTTP - Hyper Text Transfer Protocol
+    
+-->
