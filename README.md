@@ -8,3 +8,7 @@ Repositório relacionado às matérias do curso superior de Tecnologia em Sistem
 2. Linguagem de Programação
 
     Professor: Diego Andre Santana
+
+3. Algoritmos
+
+    Professor: Leandro Magalhães de Oliveira
