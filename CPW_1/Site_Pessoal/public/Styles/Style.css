@@ -1,0 +1,90 @@
+@font-face{
+    font-family: "Title";
+    src: url("../Fonts/KaiseiOpti-Regular.ttf");
+}
+@font-face{
+    font-family: Sub-title;
+    src: url("../Fonts/AbrilFatface-Regular.ttf");
+}
+@font-face{
+    font-family: pgraph;
+    src:url("../Fonts/Rajdhani-Medium.ttf");
+}
+
+
+
+body{
+    margin: 0;
+}
+
+#conteiner{
+    display: grid;
+    grid-template-areas: 
+    "cabecalho cabecalho cabecalho cabecalho cabecalho"
+    "conteudo conteudo conteudo person person"
+    "rodape rodape rodape rodape rodape";
+    grid-auto-columns: 1fr;
+}
+#area1{
+    grid-area: cabecalho;
+    padding: 50px 0px 50px 5px;
+    text-align: left;
+    background-color: black;
+    color: whitesmoke;
+    font-family: "Title";
+}
+#area2{
+    grid-area: conteudo;
+    padding: 00px 0px 00px 5px;
+}
+#area2 h2{
+    font-family: "Sub-Title";
+}
+#area2 p{
+    font-family: "pgraph";
+}
+#area3{
+    grid-area: person;
+    background-color: rgb(17, 42, 58);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 55px 0px 55px 5px;
+}
+#area3 h2{
+    font-family: "Sub-title";
+}
+#area3 p{
+    font-family: "pgraph";
+}
+#area3 img{
+    border-radius: 50%;
+    border: solid;
+    width: 50%;
+}
+#area4{
+    grid-area: rodape;
+    background-color: black;
+    color: white;
+    padding: 5px 0px 5px 5px;
+    
+}
+#area4 p{
+    font-family: "pgraph";
+}
+#area4 img{
+    width: 30px;
+}
+
+@media only screen and (max-width: 600px)
+{
+    #conteiner{
+        grid-template-areas:
+            "cabecalho"
+            "conteudo"
+            "person"
+            "rodape";
+    }
+    #conteiner *{
+        text-align: center;
+    }
+}

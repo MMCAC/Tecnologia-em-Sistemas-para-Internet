@@ -1,0 +1,255 @@
+.loader-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #3498db;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader{
+    0%
+    {
+        color: #ffe1e1;
+    }
+    25%
+    {
+        color: #ffb9b9;
+    }
+    50%
+    {
+        color: #ff6767;
+    }
+    75%
+    {
+        color: #ff1900;
+    }
+    100%
+    {
+        color: #00000000;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@font-face{
+    font-family: "Game";
+    src: url("..public/Fonts/SuperMarioBros.ttf");
+}
+@font-face{
+    font-family: "Game2";
+    src: url("..public/Fonts/Cinzel-VariableFont_wght.ttf");
+}
+
+
+
+
+
+
+body{
+    margin: 0;
+}
+
+#conteiner{
+    display: grid;
+    grid-template-areas:
+    "menu menu menu menu lateral lateral"
+    "cabecalho cabecalho info info info info"
+    "imagens conteudo conteudo conteudo conteudo person"
+    "outros game game game game person"
+    "rodape rodape rodape rodape rodape rodape";
+    grid-auto-columns: 1fr;
+}
+#conteiner_galeria{
+    display: grid;
+    grid-template-areas:
+    "menu menu menu menu lateral lateral"
+    "gal gal gal gal gal gal";
+    grid-auto-columns: 1fr;
+}
+
+
+
+
+#area0{
+    background-color: red;
+    grid-area: menu;
+}
+#area0_lateral{
+    background-color: red;
+    grid-area: lateral;
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#area1{
+    grid-area: cabecalho;
+    padding: 50px 0px 50px 5px;
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+    color: whitesmoke;
+    font-family: "Title";
+}
+#area1_1{
+    grid-area: info;
+    background-color: rgb(248, 248, 248);
+    color: white;
+    padding: 5px 0px 5px 5px;
+    text-align: center;
+}
+
+
+
+#area2{
+    grid-area: imagens;
+    background-color: rgb(248, 248, 248);
+}
+#area2 img{
+    padding: 00px 0px 00px 0px;
+    border: solid 0px;
+    opacity: 0.3;
+
+}
+
+
+
+#area_central{
+    grid-area: conteudo;
+    background-color: rgb(248, 248, 248);
+}
+#area_central h1{
+    font-family: Game;
+    font-size: 40px;
+    text-align: center;
+}
+#area_central p{
+    font-family: Game2;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+#area3{
+    grid-area: person;
+    background-color:  rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 55px 0px 5px 5px;
+    border: 0px solid;
+    border-color: white;
+}
+
+
+
+#area_outros{
+    grid-area: outros;
+    background-color: rgb(255, 0, 0);
+    padding: 80px 5px 5px 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#area_game{
+    grid-area: game;
+    background-color: rgb(255, 0, 0);
+    padding: 5px 5px 55px 5px;
+    display:inline;
+    text-align: center;
+
+}
+#area_game img{
+    border: 9px solid;
+    border-color: rgb(248, 248, 248);
+    border-radius: 10%;
+}
+#area_game h1{
+    color: white;
+    font-family: Game;
+    font-size: 100px;
+}
+
+
+
+
+
+#area4{
+    grid-area: rodape;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    padding: 5px 0px 5px 5px;
+    text-align: center;
+    
+}
+#area4 p{
+    font-family: "pgraph";
+}
+#area4 img{
+    width: 60px;
+}
+
+
+#gallery{
+    grid-area: gal;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fil, minmax(300px, 300px));
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+#gallery img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+    #conteiner{
+        grid-template-areas:
+            "menu lateral"
+            "cabecalho cabecalho"
+            "info info"
+            "imagens imagens"
+            "conteudo conteudo"
+            "person person"
+            "outros outros"
+            "game game"
+            "rodape rodape";
+    }
+    #conteiner *{
+        text-align: center;
+    }
+
+    #conteiner_galeria{
+        grid-template-areas: 
+        "menu"
+        "lateral"
+        "gal";
+    }
+    #conteiner_galeria *{
+        text-align: center;
+    }
+}

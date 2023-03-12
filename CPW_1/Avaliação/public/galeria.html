@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <div id="conteiner_galeria">
+        <div id="area0">
+            <a href="index.html"><img src="Images/nintendo.png" alt="Nintendo" width="20%"></a>
+        </div>
+        <div id="area0_lateral">
+            <img src="Images/search.png" alt ="Search" width="10%">
+            <img src="Images/question.png" alt ="Question" width="10%">
+            <img src="Images/user.png" alt ="User" width="10%">
+            <a href="galeria.html"><img src="Images/gallery.png" alt="Galeria" width="10%"></a>
+        </div>
+
+        <div id="gallery">
+            <img src="Images/images (3).jpg" alt="Imagem" width="100%">
+            <img src="Images/images.jpg" alt="Imagem" width="100%">
+            <img src="Images/images (1).jpg" alt="Imagem" width="500px">
+            <img src="Images/images (2).jpg" alt="Imagem" width="500px">
+        </div>
+    </div>
+
+    <script>
+        $(window).on("load",function(){
+            $(".loader-container").fadeOut(1000);
+        });
+    </script>
+</body>
+</html>
