@@ -1,4 +1,5 @@
 # Exercícios básicos
 
 Software usado: Visual Studio Code.
-Linguagem de progrmação usada: JavaScript.
+
+Linguagem de programação usada: JavaScript.
