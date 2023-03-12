@@ -1,0 +1,27 @@
+@font-face{
+    font-family: "first";
+    src: url(/Atividade1/Fonts/AbrilFatface-Regular.ttf);
+}
+@font-face{
+    font-family: "second";
+    src: url(/Atividade1/Fonts/KaiseiOpti-Regular.ttf);
+}
+
+h1{
+    font-family: first;
+}
+h2{
+    font-family: first;
+}
+p{
+    font-family: second;
+}
+
+#list{
+    font-family: second;
+}
+
+#img{
+    border-radius: 10px;
+    width: 30%;
+}
